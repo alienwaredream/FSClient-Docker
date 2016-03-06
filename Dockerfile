@@ -10,4 +10,4 @@ RUN apt-get -y install libpcap-dev
 
 EXPOSE 2000
 
-CMD java -jar finalspeed_client.jar
+CMD sudo java -jar finalspeed_client.jar
