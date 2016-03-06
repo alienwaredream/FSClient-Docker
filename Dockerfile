@@ -8,7 +8,7 @@ RUN apt-get -y install default-jdk
 
 RUN apt-get -y install libpcap-dev
 
-COPY fs.jar /usr/local/etc/fs.jar
+COPY finalspeed_client.jar /usr/local/etc/finalspeed_client.jar
 
 COPY client_config.json /usr/local/etc/client_config.json
 
@@ -16,4 +16,4 @@ COPY port_map.json /usr/local/etc/port_map.json
 
 EXPOSE 2000
 
-CMD sudo java -jar /usr/local/etc/fs.jar
+CMD sudo java -jar /usr/local/etc/finalspeed_client.jar
