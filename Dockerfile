@@ -12,4 +12,6 @@ RUN apt-get install git
 
 RUN git clone git@github.com:jonechenug/FSClient-Docker.git
 
-RUN java -jar finalspeed_client.jar
+EXPOSE 2000
+
+CMD java -jar finalspeed_client.jar
